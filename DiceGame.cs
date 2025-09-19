@@ -12,7 +12,7 @@ var gameSettings = new GameSettings
 
 var diceGameRunner = new DiceGameRunner(gameSettings);
 
-Console.WriteLine("Running new dice game with");
+Console.WriteLine("Running new dice game!");
 
 diceGameRunner.Run();
 
