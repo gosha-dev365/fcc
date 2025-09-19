@@ -89,7 +89,7 @@ public class DiceGame
     {
         var die = new Die(_dieSize);
         var minRoll = 6;
-        var diceRemoved = 1;
+        var diceRemoved = 0;
         
         for (var i = 0; i < numberOfDice; i++)
         {
@@ -109,6 +109,11 @@ public class DiceGame
             } 
         }
 
+        // if no 3 rolled, we need to manually remove 1 die
+        if (diceRemoved == 0)
+        {
+            diceRemoved = 1;
+        }
         return (minRoll, diceRemoved);
     }
 }
