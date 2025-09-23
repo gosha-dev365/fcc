@@ -88,6 +88,7 @@ public class DiceGame
     private (int,int) SingleGameRoll(int numberOfDice)
     {
         var die = new Die(_dieSize);
+        // TODO: (GK) this is a bug, should be set to _dieSize
         var minRoll = 6;
         var diceRemoved = 0;
         
